@@ -293,7 +293,7 @@ function checkVictory() {
         for (var j = 0; j < gBoard[0].length; j++) {
             var currCell = gBoard[i][j];
             if (currCell.cellName === MINE) {
-                if (!currCell.isMarked) {
+                if (!currCell.isMarked && !currCell.isShown) {
                     victory = false;
                 }
             }
