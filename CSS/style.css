@@ -1,0 +1,134 @@
+
+*{
+    transition-duration: 0.2s;
+}
+
+body {
+    transition: 0.2s;
+    background-color: rgba(1, 17, 36, 0.479);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.night-mode {
+    background-color: rgba(0, 0, 0, 0.767);
+    color: cornsilk;
+}
+
+button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(173, 171, 171);
+    font-size: large;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(165, 163, 163);
+    color: rgb(241, 224, 124);
+    cursor: pointer;
+}
+button:active {
+    background-color: #ffbf00;
+}
+button:active {
+    background-color: #ffbf00;
+}
+.timer-display {
+    background-color: rgba(12, 44, 187, 0.178);
+    border-radius: 17px;
+    padding: 7px;
+    text-align: left;
+    font-size: large;
+    display: inline-block;
+}
+.smiley-display {
+    padding: 7px;
+    margin: 5px;
+    text-align: left;
+    font-size: large;
+    display: inline-block;
+    font-size: x-large;
+    border-radius: 50%;
+}
+.night-mode .timer-display {
+    background-color: rgba(2, 7, 27, 0.384);
+}
+.night-mode .lives-display {
+    background-color: rgba(2, 7, 27, 0.384);
+}
+.night-mode .flag-count-display {
+    background-color: rgba(2, 7, 27, 0.384);
+}
+
+.smiley-display:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.lives-display {
+    background-color: rgba(12, 44, 187, 0.178);
+    border-radius: 17px;
+    padding: 7px;
+    text-align: left;
+    font-size: large;
+    display: inline-block;
+}
+.flag-count-display {
+    background-color: rgba(12, 44, 187, 0.178);
+    border-radius: 17px;
+    padding: 7px;
+    text-align: left;
+    font-size: large;
+    display: inline-block;
+}
+
+.board-container {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.board-container td {
+    font-size: x-large;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(219, 218, 218, 0.726);
+    cursor: pointer;   
+}
+
+.cell {
+    border-radius: 4px;
+}
+
+.cell.unshown:hover {
+    background-color: rgb(219, 218, 218);
+}
+
+.cell.shown {
+    background-color: rgba(5, 29, 168, 0.151);
+}
+
+.cell.shown.mine {
+    background-color: rgba(238, 95, 95, 0.527);
+}
+
+.leader-board{
+    background-color: aqua;
+    text-align: center;   
+}
+
+.centered {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.counters-bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons-bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
